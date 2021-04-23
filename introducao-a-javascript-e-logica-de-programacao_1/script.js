@@ -190,3 +190,4 @@ else if(porcentagem > 100 || porcentagem < 0){
  console.log("Salário: " + salarioLiquido - aliquotIR, 'Você paga ' ,aliquotINSS ,'ao INSS e ', aliquotIR, 'ao IR.');
 
 
+ 
