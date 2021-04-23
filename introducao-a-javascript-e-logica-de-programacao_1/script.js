@@ -133,3 +133,60 @@ else if(porcentagem > 100 || porcentagem < 0){
     console.log('Das três variáveis uma é ímpar');
  
  }
+
+ //Questão 09. Escreva um programa que defina três números em variáveis e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele retorna false .
+ let a = 3;
+ let b = 4;
+ let c = 6;
+ if((a % 2 != 0) || (b % 2 != 0) || (c % 2 != 0)){
+    console.log('um dos 3 é ímpar');
+ }
+    else{
+    console.log('Das três variáveis uma é par');
+ 
+ }
+
+ //Questão 10. Escreva um programa que se inicie com dois valores em duas variáveis diferentes: o custo de um produto e seu valor de venda. A partir dos valores, calcule quanto de lucro (valor de venda descontado o custo do produto) a empresa terá ao vender mil desses produtos.
+ let valorCusto = 80;
+ let valorVenda = 180;
+ //impostoSobreOCusto = 20/100;
+ valorCustoTotal = valorCusto + valorCusto * 20/100;
+ lucro = valorVenda - valorCustoTotal;
+ console.log (lucro * 1000);
+
+
+ //Questão 11.A notação para um salário de R$1500,10, por exemplo, deve ser 1500.10. Para as faixas de impostos, use as seguintes referências:
+
+
+ let aliquotINSS;
+ let aliquotIR;
+ 
+ let salarioBruto = 2000.00;
+ //Cálculo da aliquota do INSS
+ if (salarioBruto <= 1556.94) {
+   aliquotINSS = salarioBruto * 0.08;
+ } else if (salarioBruto <= 2594.92) {
+   aliquotINSS = salarioBruto * 0.09;
+ } else if (salarioBruto <= 5189.82) {
+   aliquotINSS = salarioBruto * 0.11;
+ } else {
+   aliquotINSS = 570.88;
+ }
+ //Cálculo do salário líquido
+ let salarioLiquido = salarioBruto - aliquotINSS;
+ //Cálculo da aliquota do IR
+ if (salarioLiquido <= 1903.98) {
+   aliquotIR = 0;
+ } else if (salarioLiquido <= 2826.65) {
+   aliquotIR = (salarioLiquido * 0.075) - 142.80;
+ } else if (salarioLiquido <= 3751.05) {
+   aliquotIR = (salarioLiquido * 0.15) - 354.80;
+ } else if (salarioLiquido <= 4664.68) {
+   aliquotIR = (salarioLiquido * 0.225) - 636.13;
+ } else {
+   aliquotIR = (salarioLiquido * 0.275) - 869.36;
+ };
+ 
+ console.log("Salário: " + salarioLiquido - aliquotIR, 'Você paga ' ,aliquotINSS ,'ao INSS e ', aliquotIR, 'ao IR.');
+
+
