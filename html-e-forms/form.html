@@ -5,31 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms e HTML</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+<link rel='stylesheet' href="./style.css">
 </head>
 <body>
-    <fieldset>
-        <div><label for="input-nome">Nome:</label>
-            <input type="text" name="nome" maxlength="50" id="input-nome" required>
+    
+    <div  class='display-2 text-center'>
+        <header>Preencha o formulário</header>
+        <h2>Entre em contato com a nossa equipe</h2>
+        <hr>
+   </div>
+   <fieldset>
+        <div class = 'form-check'><label class="form-label" for="input-nome">Nome:</label>
+        <input class="form-control" type="text" name="nome" maxlength="50" id="input-nome" required>
         </div>
-        <div><label for="input-email">E-mail:</label>
-            <input type="text" name="email" maxlength="50" id="input-email" required>
+        <div class = 'form-check'><label class="form-label" for="input-email">E-mail:</label>
+            <input class="form-control" type="text" name="email" maxlength="50" id="input-email" required>
         </div>
-        <div><label for="input-cpf">CPF:</label>
-            <input type="text" name="cpf" maxlength="11" id="input-cpf" required>
+        <div class = 'form-check'><label class="form-label" for="input-cpf">CPF:</label>
+            <input class="form-control" type="text" name="cpf" maxlength="11" id="input-cpf" required>
         </div>
-        <div><label for="input-endereco">Endereço:</label>
+        <div class = 'form-check'><label class="form-label" for="input-endereco">Endereço:</label>
             <input type="text" name="endereco" maxlength="200" id="input-endereco" required>
         </div>
-        <div><label for="input-cidade">Endereço:</label>
+        <div class = 'form-check'><label class="form-label" for="input-cidade">Endereço:</label>
             <input type="text" name="cidade" maxlength="28" id="input-cidade" required>
         </div>
-        <div><label for="input-estados">Estado:</label>
+        <div class = 'form-check'><label class="form-label" for="input-estados">Estado:</label>
             <select name="estados" id="input-estados" required>
-                               
-            </select>
+                            
+        </select>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+                Default checkbox
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+                Checked checkbox
+            </label>
         </div>
     </fieldset>
-    <script src="script.js"></script>
+    <fieldset>
+       <div class="form-check">
+           <input type="textArea" placeholder="Seu texto aqui" maxlength="500" required>
+       </div> 
+       <div class="form-check">
+           <label>Data de início:</label>
+           <input type="date" required>
+       </div>
+       <div>
+           <button class="form-check">Enviar</button>
+       </div>
+    </fieldset>
+        
+         
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </body>
 </html>

@@ -12,4 +12,4 @@ function selectEstado(){
     };
 };
 
-selectEstado();
+selectEstado(); 
