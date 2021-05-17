@@ -1,0 +1,41 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+  
+  background-color: burlywood;
+  display: flex;
+  padding: 20px 20px;
+  margin: 20px 20px;
+
+}
+/* layout pequeno */
+@media screen and (min-width: 728px) {
+  body{
+    display: flex;
+    background-color:red;
+    padding: 20px 20px;
+    margin: 20px 20px;
+  }
+  
+}
+/* layout médio */
+@media screen and (min-width:1024px){
+  body{
+    background-color: cadetblue;
+    padding: 20px 20px;
+    margin: 20px 20px;
+  }  
+}
+/* layout grande */
+@media screen and (min-width: 1300px) {
+  body{
+    background-color: cornflowerblue;
+    padding: 20px 20px;
+    margin: 20px 20px;
+  }
+  
+}

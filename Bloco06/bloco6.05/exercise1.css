@@ -1,0 +1,36 @@
+body {
+font-size: large;
+margin: 20px 20px;
+}
+h1 {
+font-size: small;
+}
+h2 {
+
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+    padding: 20px 20px;
+}
+
+@media screen and (max-width: 175px) {
+    body{
+        font-size: small;
+        margin: 20px 20px;
+        padding: 20px 20px;
+    }
+
+    
+}
+
+@media screen and (min-width:1300px) {
+    body{
+        font-size: x-large;
+        background-color: blueviolet;
+    }
+}
