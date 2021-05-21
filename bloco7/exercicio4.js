@@ -43,9 +43,14 @@ ${order.address.street}, Nº:${order.address.number}, AP:${order.address.apartme
 
 customerInfo(order);
 
-const orderModifier = (order) => {
+const orderModifier = (order) => Object.values(order);
   // Adicione abaixo as informações necessárias.
 
-}
+  order.name = 'Luis Silva';
+  order.payment = '50';
+  let newPizzas = {'mussarela':60, 'calabresa':50}
+  Object.assign(order.order.pizza, newPizzas);
+
+console.log(`Olá ${order.name}, o total do seu pedido de ${order.order.pizza.mussarela}, calabresa e Coca-Cola Zero é R$ 50,00.`)
 
 orderModifier(order);
