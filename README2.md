@@ -1,1 +1,0 @@
-Curso, inicialização de commit.
