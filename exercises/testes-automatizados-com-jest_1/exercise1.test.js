@@ -6,6 +6,14 @@
 
 const sum = (a, b) => a + b;
 
-test('sums two values', () => {
-  expect(sum(4, 5)).toEqual(9);
+test('Testa se a soma dos valores é igual a 9', () => {
+  expect(sum(4, 5)).toBe(9);
+});
+
+test('Testa se os parametros de entrada 0 retorno será 0', () => {
+expect(sum(0, 0)).toBe(0);
+});
+
+test('Testa se os parametros são numeros', () => {
+expect(sum(4, '5')).toMatch(9);
 });
